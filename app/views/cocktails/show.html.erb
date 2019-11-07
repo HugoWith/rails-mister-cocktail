@@ -1,0 +1,19 @@
+
+
+<div class="container">
+  <div class="bg-img">
+<h1><%= @cocktail.name %></h1>
+
+<%= link_to 'Add dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-ghost'  %>
+
+<h2>Les GROSSES DOSES 🔥 :</h2>
+
+
+ <p><% @cocktail.doses.each do |dose| %>
+ <%=  dose.ingredient.name  %>  <%= dose.description %><br>
+ <%end%>
+ </p>
+
+<%= link_to 'Back home', cocktails_path, class: 'btn btn-ghost'  %>
+</div>
+</div>
