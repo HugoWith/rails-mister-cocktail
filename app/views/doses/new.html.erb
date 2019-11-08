@@ -1,14 +1,15 @@
 <div class="container">
 <div class="bg-img">
   <form action="" class="form">
-<h1>Add Doses</h1>
+<h1>ADD YOUR DOSES</h1>
 
 
-<h1>Create a new cocktail</h1>
+<p>Be creative</p>
 <%= simple_form_for ([ @cocktail, @dose]) do |f| %>
 <%= f.input :description %>
 <%= f.association :ingredient %>
-<%= f.submit class: 'btn btn-ghost' %>
+<%= f.submit class: 'btn btn-ghost', id: 'back-btn' %>
+<%= link_to 'Back', cocktails_path, class: 'btn btn-ghost', id: 'back-btn' %>
 <% end %>
 </form>
 </div>

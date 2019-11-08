@@ -13,3 +13,19 @@
 .btn-ghost:hover {
   opacity: 1;
 }
+
+#back-btn {
+  color: #FFF;
+  border: 1px solid #FFF;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#back-btn:hover {
+  opacity: 0.6;
+}
